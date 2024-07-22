@@ -92,7 +92,7 @@
                 <td class="px-6 py-4">
                     Puncture
                 </td>
-                <td class="px-6 py-4">
+                <td class="px-6 py-4 text-red-500">
                     Due
                 </td>
                 <td class="px-6 py-4">
@@ -110,7 +110,7 @@
                 <td class="px-6 py-4">
                     Camera
                 </td>
-                <td class="px-6 py-4">
+                <td class="px-6 py-4 text-red-500">
                     Due
                 </td>
                 <td class="px-6 py-4">
@@ -129,7 +129,7 @@
                 <td class="px-6 py-4">
                     Accessories
                 </td>
-                <td class="px-6 py-4">
+                <td class="px-6 py-4 text-red-500">
                     Due
                 </td>
                 <td class="px-6 py-4">
@@ -139,17 +139,16 @@
             </tr>
         </tbody>
     </table>
-</div>
+</div> 
 
 <!-- </div> -->
-
 
 
 
 <div id="popup">
     <div id="popup-content">
 
-        <div class="relative">
+        <div class="relative">  <!--  Close button -->
             <div class="absolute top-0 right-0">
                 <svg (click)="closePopup()" id="close" class="cursor-pointer w-6 h-6 text-gray-800 dark:text-white"
                     aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -160,15 +159,12 @@
             </div>
         </div>
 
-
-        <div class="items-center mt-3 mb-4">
-            <h1 class="text-center text-black text-2xl mb-3">Services included</h1>
+        <div class="items-center mt-3 mb-4"> <!--  Radio buttons -->
+            <h1 class="text-center text-black font-semibold text-2xl mb-3">Services included</h1>
             <input id="engineOil" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
             <label for="engineOil" class="ms-2 text-md text-black">Engine Oil</label> <br>
             <input id="engineOil" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
             <label for="engineOil" class="ms-2 text-md text-black">Fuel Filter</label> <br>
-            <input id="engineOil" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
-            <label for="engineOil" class="ms-2 text-md text-black">Lock Set</label> <br>
             <input id="engineOil" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
             <label for="engineOil" class="ms-2 text-md text-black">Clutch Plate</label> <br>
             <input id="engineOil" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
@@ -177,15 +173,16 @@
             <label for="engineOil" class="ms-2 text-md text-black">Tyre</label> <br>
             <input id="engineOil" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
             <label for="engineOil" class="ms-2 text-md text-black">Puncture</label> <br>
+            <input id="engineOil" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
+            <label for="engineOil" class="ms-2 text-md text-black">Wheel Alignment</label> <br>
         </div>
 
-        <div class="relative ">
+        <div class="relative "> <!--  Submit button -->
             <div class="absolute -bottom-16 right-0">
                 <button (click)="closePopup()" type="button"
                     class=" text-white bg-green-700 hover:bg-green-800  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 ">Submit</button>
             </div>
         </div>
-
 
     </div>
 </div>
